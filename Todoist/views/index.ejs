@@ -1,0 +1,18 @@
+<%-include("partials/header.ejs") %>
+    <main>
+        <div class="box">
+            <%listItems.forEach(i=> {%>
+                <div class="item">
+                    <input type="checkbox">
+                    <p>
+                        <%= i %>
+                    </p>
+                </div>
+                <%});%>
+                    <form action="/" method="post">
+                        <input type="text" name="newItem" placeholder="New Item" autocomplete="off" />
+                        <button type="submit" name="list" value=Monday, July 31>+</button>
+                    </form>
+        </div>
+    </main>
+    <%-include("partials/footer.ejs") %>
